@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 10 Calendar</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="calendar">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="display: none;">
+        <symbol id="calendar-arrow" viewBox="0 0 448 512">
+          <path fill="currentColor" d="M4.465 366.475l7.07 7.071c4.686 4.686 12.284 4.686 16.971 0L224 178.053l195.494 195.493c4.686 4.686 12.284 4.686 16.971 0l7.07-7.071c4.686-4.686 4.686-12.284 0-16.97l-211.05-211.051c-4.686-4.686-12.284-4.686-16.971 0L4.465 349.505c-4.687 4.686-4.687 12.284 0 16.97z"></path>
+        </symbol>
+      </svg>
+      <div class="calendar__backdrop"></div>
+      <header class="calendar__header">
+        <div class="calendar__clock" data-time="AM">3:00:00</div>
+        <div class="calendar__date">Thursday, January 01, 1970</div>
+      </header>
+      <div class="calendar__nav">
+        <span class="calendar__nav-item calendar__period">January 1970</span>
+        <span class="calendar__arrows">
+          <span class="calendar__nav-item calendar__arrow" data-type="prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+              <use xlink:href="#calendar-arrow" href="#calendar-arrow"></use>
+            </svg>
+          </span>
+          <span class="calendar__nav-item calendar__arrow" data-type="next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+              <use xlink:href="#calendar-arrow" href="#calendar-arrow"></use>
+            </svg>
+          </span>
+        </span>
+      </div>
+      <div class="calendar__days-head">
+        <div class="calendar__weekday">su</div>
+        <div class="calendar__weekday">mo</div>
+        <div class="calendar__weekday">tu</div>
+        <div class="calendar__weekday">we</div>
+        <div class="calendar__weekday">th</div>
+        <div class="calendar__weekday">fr</div>
+        <div class="calendar__weekday">sa</div>
+      </div>
+      <section class="calendar__days"></section>
+    </div>
+  </body>
+</html>
